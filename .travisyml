@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - 0.10
+
+branches:
+  only:
+    - master
+
+services:
+  - redis-server
+
+before_install:
+  - npm install -g bunyan cowboy grunt-cli
+
+script:
+  - grunt
+
+after_failure:
+  - cat tests/cattle.log | bunyan
+  - cat tests/cowboy.log | bunyan
+
+notifications:
+  email:
+    - mrvisser@gmail.com

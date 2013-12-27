@@ -1,0 +1,31 @@
+{
+  "name": "cowboy-exec",
+  "description": "A cowboy module that allows you to execute arbitrary shell commands on cattle nodes",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mrvisser/node-cowboy-exec",
+  "author": {
+    "name": "Branden Visser",
+    "email": "mrvisser@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrvisser/node-cowboy-exec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrvisser/node-cowboy-exec/issues"
+  },
+  "dependencies": {
+    "colors": "latest",
+    "optimist": "latest",
+    "underscore": "latest"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "cowboy-cli-api": "latest",
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "latest"
+  }
+}
