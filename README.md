@@ -1,6 +1,6 @@
 # node-cowboy-exec
 
-[![Build Status](https://travis-ci.org/oaeproject/node-cowboy-exec.png?branch=master)](https://travis-ci.org/oaeproject/node-cowboy-exec)
+[![Build Status](https://travis-ci.org/mrvisser/node-cowboy-exec.png?branch=master)](https://travis-ci.org/mrvisser/node-cowboy-exec)
 
 Cowboy module that allows you to execute arbitrary shell commands on cattle nodes
 
