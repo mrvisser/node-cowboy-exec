@@ -31,11 +31,11 @@ describe('Exec', function() {
     });
 
     it('returns both the stdout and stderr output from a command when there is data on both streams', function(callback) {
-        cowboyCli.cowboy(testUtil.defaultCowboyConfig(), 'exec', ['-c', 'echo "test echo" | tee /dev/stderr'], function(code, output) {
+        cowboyCli.cowboy(testUtil.defaultCowboyConfig(), 'exec', ['-c', 'echo "test echo"; echo "test echo" 1>&2'], function(code, output) {
             assert.strictEqual(code, 0);
 
             var lines = output.split('\n');
-            _assertHeader(lines, 'echo "test echo" | tee /dev/stderr');
+            _assertHeader(lines, 'echo "test echo"; echo "test echo" 1>&2');
             assert.ok(lines[5].indexOf('StdOut') > -1);
             assert.strictEqual(lines[7], 'test echo');
             assert.ok(lines[10].indexOf('StdErr') > -1);
