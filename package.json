@@ -1,7 +1,7 @@
 {
   "name": "cowboy-exec",
   "description": "A cowboy module that allows you to execute arbitrary shell commands on cattle nodes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/mrvisser/node-cowboy-exec",
   "author": {
     "name": "Branden Visser",
